@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
+    "mocha": "^2.5.3",
+    "mocha-coveralls-reporter": "0.0.5",
     "mocha-lcov-reporter": "^1.2.0"
   }
 }
