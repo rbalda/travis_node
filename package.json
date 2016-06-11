@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "test": "make test-coveralls"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
     "jscoverage": "^0.6.0",
     "mocha": "^2.5.3",
     "mocha-coveralls-reporter": "0.0.5",
