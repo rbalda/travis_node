@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/mocha -R mocha-lcov-reporter|
+    ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "express-dot": "^0.1.0",
     "mocha": "^2.5.3",
     "request": "^2.72.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9",
+    "mocha-lcov-reporter": "^1.2.0"
   }
 }

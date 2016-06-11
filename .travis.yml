@@ -6,6 +6,3 @@ before_script:
   - "node app/server.js &"
 
 script: "npm test "
-
-after_script:
-  - "ps -aux|grep node"
