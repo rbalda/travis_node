@@ -3,6 +3,9 @@ node_js:
   - "6.2.0"
 
 before_script:
-  - "node app/server.js"
+  - "node app/server.js &"
 
-script: "npm test"
+script: "npm test "
+
+after_script:
+  - "ps -aux|grep node"
