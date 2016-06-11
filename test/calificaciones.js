@@ -30,8 +30,8 @@ describe("Prueba de Programa",function () {
     describe("Prueba enviar promedios",function () {
         it("probando envio",function (done) {
             var url = "http://localhost:3000/promedios/";
-            request.post(url,
-                {form:{c1:'50',c2:'60',c3:'70'}},function (error,response,body) {
+            request.post({url:url,
+                form:{c1:'50',c2:'60',c3:'70'}},function (error,response,body) {
                 expect(response.statusCode).to.equal(200);
 
                     expect(body).to.contains("65");
