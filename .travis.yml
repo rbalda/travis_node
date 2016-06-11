@@ -5,6 +5,6 @@ node_js:
 before_script:
   - "node app/server.js &"
 
-script: "npm test"
+script: "YOURPACKAGE_COVERAGE=1 ./node_modules/.bin/mocha test -R mocha-lcov-reporter"
 
 after_script: "killall -f node"
